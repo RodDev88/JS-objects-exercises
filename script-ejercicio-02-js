@@ -1,0 +1,23 @@
+
+const producto = {
+    id: 43,
+    titulo: "Cafetera magnética",
+    precio: 23990,
+    color: "rojo",
+    src: "https://placedog.net/500", 
+    descripcion: `Calienta tu café matutino
+    con la nueva tecnología magnética`
+};
+
+
+      const productoSection = document.querySelector(".productos");
+
+      productoSection.innerHTML = `
+  <article class="producto">
+    <h4>${producto.titulo}</h4>
+    <h6>Precio: $${producto.precio}</h6>
+    <h6>Color: ${producto.color}</h6>
+    <img src="${producto.src}" alt="${producto.titulo}" style="width: 100%;" />
+    <p>${producto.descripcion}</p>
+  </article>
+`;
